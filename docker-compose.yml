@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  config-server:
+  config-server: 
     build: ./config-server
     ports:
       - "8888:8888"
