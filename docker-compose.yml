@@ -18,7 +18,7 @@ services:
 
   inventory-service:
     build: ./inventory-service
-    ports:
+    ports: 
       - "${INVENTORY_HOST_PORT:-8081}:${INVENTORY_CONTAINER_PORT:-8081}"
     environment:
       - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-dev}
